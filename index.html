@@ -8,13 +8,23 @@
     <title>Container</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+        .alto {
+            height: 400px;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <div class="container text-center py-5">
+        <h1>Primer ejercicio container</h1>
+    </div>
 
     <!-- Primer ejercicio, Container
-    class="container" mantiene margenes  deja todo lo que este dentro centrado, -->
+    class="container" mantiene margenes class="container-fluid" esta al 100% de la pantalla -->
     <div class="container-fluid bg-primary py-5">
         <div class="container text-white">
             <h1 class="display-3"> <b>Layout</b></h1>
@@ -23,22 +33,232 @@
         </div>
     </div>
 
-    <!-- Segundo ejercicio, grid row="col-12" el total de la pantalla es representado por 12, por tanto row="col-6,col-6" es toda la pantalla"
+
+    <div class="container text-center py-5">
+        <h1>Segundo ejercicio grid</h1>
+    </div>
+    <!-- Segundo ejercicio, grid
+        <div class="row">
+            <div class="col-12" representa el total del tamaño de la pantalla>
+            </div>
+        </div>    
+        por tanto class="col-6" representa la mitad de la pantalla"
      -->
 
-     <br>
-     <div class="container">
-      <div class="row col-4 bg-primary">
-          <p>col-4</p>
-      </div>   
-     </div>
+    <br>
+    <!-- ejemplos -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-primary">
+                <p>col-4</p>
+            </div>
+            <div class="col-4 bg-success">
+                <p>col-4</p>
+            </div>
+            <div class="col-4 bg-primary">
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+        <br>
+        <div class="row">
+            <div class="col-3 bg-primary">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-success">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-primary">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-success">
+                <p>col-3</p>
+            </div>
+        </div>
+
+        <!-- ejercicio -->
+        <br>
+        <div class="row">
+            <div class="col-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolores consectetur quae officiis.
+                Similique, pariatur qui. Nesciunt sunt minima quia.
+            </div>
+            <div class="col-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta asperiores, dolorem nesciunt dolor
+                laborum molestias numquam alias corrupti et sint!
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi nisi, vero aut dolor provident
+                error doloremque tempora. Dolore, veritatis.
+            </div>
+            <div class="col-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi nisi, vero aut dolor provident
+                error doloremque tempora. Dolore, veritatis.
+            </div>
+            <div class="col-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi nisi, vero aut dolor provident
+                error doloremque tempora. Dolore, veritatis.
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+            <div class="col-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo error autem non ut, quos nam!
+            </div>
+        </div>
+
+
+        <!-- grid responsive -->
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 bg-primary">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eveniet nostrum accusamus,
+                    architecto et animi hic? Quidem consequuntur laudantium provident.</p>
+            </div>
+            <div class="col-sm-12 col-md-6 bg-success">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid eveniet nostrum accusamus,
+                    architecto et animi hic? Quidem consequuntur laudantium provident.</p>
+            </div>
+        </div>
+
+
+        <div class="container text-center py-5">
+            <h1>Tercer ejercicio grid responsive</h1>
+        </div>
+        <!-- Tercer ejercicio -->
+
+        <div class="container">
+            <div class=" text-center py-5">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et reprehenderit veniam debitis.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 bg-primary">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam voluptatum cumque
+                        architecto a et aliquid, natus id minus dignissimos.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 bg-success">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam voluptatum cumque
+                        architecto a et aliquid, natus id minus dignissimos.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 bg-primary">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam voluptatum cumque
+                        architecto a et aliquid, natus id minus dignissimos.</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 bg-success">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam voluptatum cumque
+                        architecto a et aliquid, natus id minus dignissimos.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container text-center py-5">
+            <h1>Cuarto ejercicio alineamiento</h1>
+        </div>
+
+        <!-- cuarto ejercicio -->
+
+        <div class="row row-col-4 alto bg-primary text-white">
+            <div class="col">Lorem ipsum dolor sit amet. </div>
+            <div class="col align-self-center">Lorem ipsum dolor sit amet. </div>
+            <div class="col">Lorem ipsum dolor sit amet. </div>
+            <div class="col align-self-end">Lorem ipsum dolor sit amet. </div>
+        </div>
+
+
+        <div class="container text-center py-5">
+            <h1>Quinto ejercicio tipografias</h1>
+        </div>
+
+        <!-- ejercicio cinco -->
+        <h1>h1. Bootstrap heading</h1>
+        <h5>h5. Bootstrap heading</h5>
+        <p class="h2">h2. Bootstrap heading</p>
+        <p class="h6">h6. Bootstrap heading</p>
+        <h3>
+            Fancy display heading
+            <small class="text-muted">With faded secondary text</small>
+        </h3>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-4">Display 4</h1>
+        <p class="lead">
+            This is a lead paragraph. It stands out from regular paragraphs.
+        </p>
+        <p>
+            This is a lead paragraph. It stands out from regular paragraphs.
+        </p>
+
+        <div class="container text-center py-5">
+            <h1>Sexto ejercicio tipografias #2</h1>
+        </div>
+
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam inventore doloribus, quibusdam
+                consectetur reprehenderit doloremque, cupiditate consequuntur quia, facilis quam esse impedit labore
+                blanditiis autem. Exercitationem perferendis mollitia alias eos? Rerum, esse? Eius architecto expedita,
+                quo pariatur sit sequi.</p>
+            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam inventore
+                doloribus, quibusdam
+                consectetur reprehenderit doloremque, cupiditate consequuntur quia, facilis quam esse impedit labore
+                blanditiis autem. Exercitationem perferendis mollitia alias eos? Rerum, esse? Eius architecto expedita,
+                quo pariatur sit sequi.</p>
+            <p class="text-center">Lorem ipsum dolor sit.</p>
+            <p class="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quo.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati aliquam consequatur impedit mollitia
+                numquam sapiente temporibus a pariatur corrupti aut.</p>
+        </div>
+
+
+
+        <div class="container text-center py-5">
+            <h1>Séptimo ejercicio REM</h1>
+        </div>
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio id officia rem in reiciendis officiis vel
+                dolor quos excepturi nihil!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio id officia rem in reiciendis officiis vel
+                dolor quos excepturi nihil!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio id officia rem in reiciendis officiis vel
+                dolor quos excepturi nihil!</p>
+            <p>1rem=16px</p>
+        </div>
+
+
+
+        <div class="container text-center py-5">
+            <h1>Octavo ejercicio espaciados</h1>
+        </div>
+
+        <div class="container bg-success text-white">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p class="m-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo deleniti, eum adipisci ipsa
+                quasi totam minus nobis dignissimos provident explicabo.</p>
+            <p class="mr-5 pb-5 bg-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel dicta aut, quasi harum
+                corrupti facere nihil est nisi ipsa fugiat cupiditate laborum officiis quod? Eaque aspernatur, ad iusto
+                quidem, delectus, itaque possimus quos autem voluptatibus ab rerum? Voluptatem, commodi temporibus.!</p>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
